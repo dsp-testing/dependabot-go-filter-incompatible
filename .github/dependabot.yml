@@ -1,42 +1,10 @@
 version: 2
-registries:
-  ghcr:
-    type: docker-registry
-    url: ghcr.io
-    username: PAT
-    password: ${{secrets.BASE_CONTAINER_IMAGE_READER_DEPENDABOT}}
 updates:
-  - package-ecosystem: docker
-    directory: /
-    groups:
-      docker:
-        patterns: ['*']
-    schedule:
-      interval: weekly
-      day: thursday
-      time: "12:00"
-    registries: [ghcr]
-    labels: [dependencies, docker]
-  - package-ecosystem: github-actions
-    directory: /
-    ignore:
-      - dependency-name: github/internal-actions
-      - dependency-name: github/observability
-    groups:
-      actions:
-        patterns: ['*']
-    schedule:
-      interval: weekly
-      day: thursday
-      time: "12:00"
-    labels: [dependencies, github_actions]
-  - package-ecosystem: gomod
-    directory: /
+  - package-ecosystem: "gomod"
+    directory: "/"
     groups:
       gomod:
         patterns: ['*']
     schedule:
-      interval: weekly
-      day: thursday
-      time: "12:00"
+      interval: "weekly"
     labels: [dependencies, go]
