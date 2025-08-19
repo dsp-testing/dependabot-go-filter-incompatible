@@ -10,9 +10,3 @@ updates:
     schedule:
       interval: "weekly"
     registries: "*"
-registries:
-  github:
-    type: git
-    url: https://github.com
-    username: x-access-token
-    password: ${{secrets.PAT}}
