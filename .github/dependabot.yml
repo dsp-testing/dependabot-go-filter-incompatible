@@ -1,6 +1,15 @@
 version: 2
+registries:
+  git-registry:
+    type: git
+    url: https://github.com
 updates:
   - package-ecosystem: "gomod"
     directory: "/"
+    registries:
+      - git-registry
+    groups:
+      gomod:
+        patterns: ['*']
     schedule:
       interval: "weekly"
