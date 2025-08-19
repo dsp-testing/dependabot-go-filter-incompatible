@@ -10,9 +10,6 @@ updates:
     directory: "/"
     registries:
       - git-registry
-    groups:
-      gomod:
-        patterns: ['*']
     schedule:
       interval: "weekly"
     labels: [dependencies, go]
