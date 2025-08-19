@@ -1,19 +1,9 @@
 version: 2
-registries:
-  private-git:
-    type: git
-    url: https://github.com
-    username: ${{secrets.GIT_USERNAME}}
-    password: ${{secrets.GIT_TOKEN}}
-
 updates:
   - package-ecosystem: "gomod"
     directory: "/"
-    registries:
-      - private-git
     groups:
       gomod:
         patterns: ['*']
     schedule:
       interval: "weekly"
-    labels: [dependencies, go]
