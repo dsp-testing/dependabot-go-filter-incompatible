@@ -9,3 +9,9 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+registries:
+  github:
+    type: git
+    url: https://github.com
+    username: x-access-token
+    password: ${{secrets.PAT}}
