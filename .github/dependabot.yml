@@ -1,15 +1,7 @@
 version: 2
-registries:
-  git-registry:
-    type: git
-    url: https://github.com
-    username: ${{secrets.GIT_USERNAME}}
-    password: ${{secrets.GIT_TOKEN}}
 updates:
   - package-ecosystem: "gomod"
     directory: "/"
-    registries:
-      - git-registry
     schedule:
       interval: "weekly"
     labels: [dependencies, go]
