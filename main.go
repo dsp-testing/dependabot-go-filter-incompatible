@@ -1,5 +1,7 @@
 package main
-import "github.com/zeromq/goczmq"
+
+import "github.com/docker/docker/client"
+
 func main() {
-    _ = goczmq.NewSocket
+    _ = client.NewClientWithOpts
 }
