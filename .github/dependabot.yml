@@ -9,8 +9,6 @@ registries:
 updates:
   - package-ecosystem: "gomod"
     directory: "/"
-    registries:
-      - git-registry
     groups:
       gomod:
         patterns: ['*']
