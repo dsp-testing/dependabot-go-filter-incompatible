@@ -1,7 +1,7 @@
 package main
 
-import "github.com/docker/docker/client"
+import "vitess.io/vitess/go/vt/proto/query"
 
 func main() {
-    _ = client.NewClientWithOpts
+    _ = query.Type_NULL_TYPE
 }
