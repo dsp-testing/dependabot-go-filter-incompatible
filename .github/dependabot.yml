@@ -17,6 +17,6 @@ updates:
     schedule:
       interval: "weekly"
       day: "friday"
-      time: "13:23"
+      time: "13:41"
       timezone: "America/New_York"
     labels: [dependencies, go]
