@@ -1,17 +1,22 @@
 version: 2
 registries:
-  git-registry:
-    type: git
-    url: https://github.com
-    username: ${{secrets.GIT_USERNAME}}
-    password: ${{secrets.GIT_TOKEN}}
+  my-private-registry:
+    type: goproxy
+    url: https://trialfxogua.jfrog.io/artifactory/api/go/gotest-go
+    username: alhousseinmed15@gmail.com
+    password: cmVmdGtuOjAxOjE3ODc2NzY5NjY6a3l4azd3aElTOXBGMlpOR1A3MndCMXlIb2JV
 
 updates:
   - package-ecosystem: "gomod"
     directory: "/"
+    registries:
+      - my-private-registry
     groups:
       gomod:
         patterns: ['*']
     schedule:
       interval: "weekly"
+      day: "friday"
+      time: "13:23"
+      timezone: "America/New_York"
     labels: [dependencies, go]
