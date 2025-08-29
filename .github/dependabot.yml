@@ -11,9 +11,6 @@ updates:
     directory: "/"
     registries:
       - my-private-registry
-    groups:
-      gomod:
-        patterns: ['*']
     schedule:
       interval: "weekly"
       day: "friday"
