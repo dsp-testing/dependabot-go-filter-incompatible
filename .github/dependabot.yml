@@ -1,7 +1,7 @@
 version: 2
 registries:
   my-private-registry:
-    type: goproxy
+    type: go-proxy
     url: https://trialfxogua.jfrog.io/artifactory/api/go/gotest-go
     username: alhousseinmed15@gmail.com
     password: cmVmdGtuOjAxOjE3ODc2NzY5NjY6a3l4azd3aElTOXBGMlpOR1A3MndCMXlIb2JV
