@@ -8,9 +8,7 @@ registries:
 updates:
   - package-ecosystem: "gomod" # See documentation for possible values
     directory: "/" # Location of package manifests
-    groups:
-      gomod:
-        patterns: ['*']
+    registries: my-private-registry
     schedule:
       interval: "weekly"
     labels: [dependencies, go]
