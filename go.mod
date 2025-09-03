@@ -4,6 +4,5 @@ go 1.23.3
 
 toolchain go1.24.5
 
-require vitess.io/vitess v0.21.1
-
+require github.com/docker/docker v24.0.7+incompatible
 
