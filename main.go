@@ -1,9 +1,9 @@
 package main
 
 import (
-    "k8s.io/client-go/kubernetes"
+    "vitess.io/vitess/go/vt/proto/query"
 )
 
 func main() {
-    _ = kubernetes.NewForConfig
+    _ = query.Type_NULL_TYPE
 }
