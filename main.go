@@ -1,10 +1,9 @@
 package main
 
 import (
-    "github.com/docker/docker/client"
+    "k8s.io/client-go/kubernetes"
 )
 
 func main() {
-    // Just importing to satisfy Go module requirements
-    _ = client.DefaultDockerHost
+    _ = kubernetes.NewForConfig
 }
