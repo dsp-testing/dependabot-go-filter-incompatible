@@ -1,14 +1,8 @@
 package main
 
-import (
-	"go.uber.org/zap"
-	"golang.org/x/crypto/bcrypt"
-	"google.golang.org/grpc"
-)
+import "vitess.io/vitess/go/vt/proto/query"
 
 func main() {
-	// Just importing to satisfy Go module requirements
-	_ = zap.NewNop()
-	_ = bcrypt.DefaultCost
-	_ = grpc.WithInsecure()
+    // Just importing to satisfy Go module requirements
+    _ = query.Type_NULL_TYPE
 }
