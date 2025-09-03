@@ -1,10 +1,4 @@
 version: 2
-registries:
-  my-private-registry:
-    type: goproxy-server
-    url: https://trialfxogua.jfrog.io/artifactory/api/go/gotest-go
-    username: alhousseinmed15@gmail.com
-    password: ${{secrets.JFROG_PASSWORD}}
 updates:
   - package-ecosystem: "gomod" # See documentation for possible values
     directory: "/" # Location of package manifests
