@@ -1,7 +1,7 @@
 version: 2
 registries:
   my-private-registry:
-    type: go-proxy
+    type: goproxy-server
     url: https://trialfxogua.jfrog.io/artifactory/api/go/gotest-go
     username: alhousseinmed15@gmail.com
     password: ${{secrets.JFROG_PASSWORD}}
