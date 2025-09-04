@@ -1,9 +1,10 @@
 module vitess-test
 
-go 1.21
+go 1.24.4
+
+require vitess.io/vitess v0.22.1
 
 require (
-    go.uber.org/zap v1.26.0
-    golang.org/x/crypto v0.14.0
-    google.golang.org/grpc v1.58.3
+	github.com/planetscale/vtprotobuf v0.6.1-0.20241121165744-79df5c4772f2 // indirect
+	google.golang.org/protobuf v1.36.5 // indirect
 )
