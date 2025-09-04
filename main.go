@@ -1,9 +1,11 @@
 package main
 
 import (
-    "vitess.io/vitess/go/vt/proto/query"
+    "github.com/alhss/private-go-utils"
+    "fmt"
 )
 
 func main() {
-    _ = query.Type_NULL_TYPE
+   version := utils.GetVersion()
+   fmt.Printf("Using private-go-utils version: %s\n", version)
 }
